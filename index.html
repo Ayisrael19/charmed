@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="player-container">
+            <div class="video-area">
+                <video id="video">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="controls">
+                    <button id="playPause">▶</button>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-filled" id="progressFilled"></div>
+                        </div>
+                    </div>
+                    <span id="time">0:00 / 0:00</span>
+                    <div class="volume-container">
+                        <button id="volumeIcon">🔊</button>
+                        <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+                    </div>
+                    <button id="fullscreen">⛶</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h3>Charmed</h3>
+            <ul id="videoList">
+                <li onclick="loadVideo('videos/A Charmed Experience.mkv')">A Charmed Experience</li>
+                <li onclick="loadVideo('videos/Charmed Effects.mkv')">Charmed Effects</li>
+                <li onclick="loadVideo('videos/Directing Charmed.mkv')">Directing Charmed</li>
+                <li onclick="loadVideo('videos/Forever Charmed.mkv')">Forever Charmed</li>
+                <li onclick="loadVideo('videos/Life Cast.mkv')">Life Cast</li>
+                <li onclick="loadVideo('videos/Story of Charmed Charmed Again.mkv')">Story of Charmed Charmed Again</li>
+                <li onclick="loadVideo('videos/Story of Charmed Genesis.mkv')">Story of Charmed Genesis</li>
+                <li onclick="loadVideo('videos/The Book of Shadows.mkv')">The Book of Shadows</li>
+                <li onclick="loadVideo('videos/The Demons of Charmed.mkv')">The Demons of Charmed</li>
+                <li onclick="loadVideo('videos/The Making of Charmed.mkv')">The Making of Charmed</li>
+                <li onclick="loadVideo('videos/The Men of Charmed.mkv')">The Men of Charmed</li>
+                <li onclick="loadVideo('videos/The Power of Three.mkv')">The Power of Three</li>
+                <li onclick="loadVideo('videos/To the Manor Born.mkv')">To the Manor Born</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
